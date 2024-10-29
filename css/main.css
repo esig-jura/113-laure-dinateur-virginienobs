@@ -1,15 +1,44 @@
+/* Importation des polices*/
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v40-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Style généraux*/
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 100%;
     line-height: 1.4;
     color: #011627;
     background-color: #fdfffc;
-    margin: 0;
+
 }
 
 main, footer {
@@ -19,6 +48,8 @@ main, footer {
 
 header {
     background-color: #011627;
+    padding-top: 5px;
+    margin-bottom: 30px;
 }
 
 header nav {
@@ -65,21 +96,34 @@ a:hover {
     justify-content: flex-end;/* Alignements des liens dans le menu */
 }
 .menu li {
-    list-style-type: none ;       /* Suppression des puces */
+    list-style-type: none; /* Suppression des puces */
 
-.logo {
-    color : #2ec4b6;
+    header .logo {
+        text-align: center;
+        margin: 0;
 
-}
+    }
 
-.imagefacebook {
-width: 20%;
-}
+    header .nom {
+        color: #2ec4b6;
+        font-size: 1.75rem;
+        margin: 15px 0;
+        line-height: 0.8;
+    }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    header nav {
+        text-align: center
+    }
 
 
+    .badge {
+        width: 10%;
+    }
+
+    main .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+    }
 }

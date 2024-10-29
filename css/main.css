@@ -141,3 +141,36 @@ header .metier {
     margin-top: -25px;
     font-weight: bold;
 }
+
+
+/* Menu navigation */
+
+header nav {
+    text-align: center;
+}
+
+header nav ul {
+    /* supprimer décalage du centre à cause de la marge des puces */
+    padding: 0;
+    /* supprimer puce */
+    list-style-type: none;
+}
+
+header nav ul li {
+    /* Mettre sur la même ligne */
+    display: inline-block;
+}
+
+/* Navigation menu */
+header nav ul li a {
+    color: #fdfffc;
+    /* Plus gras */
+    font-weight: bold;
+    /* Espacer les élèments du menu */
+    padding: 15px 10px;
+}
+
+/* Cacher menu accueil -- Sélecteur d'attribut */
+header nav ul li a[href="index.html"] {
+    display: none;
+}

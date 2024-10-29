@@ -77,12 +77,6 @@ main, footer {
     margin: 0 auto;
 }
 
-header {
-    background-color: #011627;
-    padding-top: 5px;
-    margin-bottom: 30px;
-}
-
 header nav {
     text-align: right;
     font-size: 1.125rem;
@@ -120,40 +114,30 @@ a:hover {
     color: #011627;
 }
 
-.menu {
-    display: flex;                /* Transformation en flexbox */
+/* Entête page */
+
+header {
     background-color: #011627;
-    justify-content: flex-end;/* Alignements des liens dans le menu */
+    padding-top: 5px;
+    margin-bottom: 30px;
 }
-.menu li {
-    list-style-type: none; /* Suppression des puces */
 
-    header .logo {
-        text-align: center;
-        margin: 0;
+header .logo {
+    text-align: center;
+    margin: 0;
+}
 
-    }
+header .nom {
+    font-family: 'Changa One', cursive;
+    font-weight: 400;
+    color: #2ec4b6;
+    font-size: 1.75rem;
+    margin: 15px 0;
+    line-height: 0.8;
+}
 
-    header .nom {
-        color: #2ec4b6;
-        font-size: 1.75rem;
-        margin: 15px 0;
-        line-height: 0.8;
-    }
-
-    header nav {
-        text-align: center
-    }
-
-
-    .badge {
-        width: 10%;
-    }
-
-    main .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-
-    }
+header .metier {
+    color: #e71d36;
+    margin-top: -25px;
+    font-weight: bold;
 }

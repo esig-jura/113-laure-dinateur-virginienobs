@@ -72,6 +72,12 @@ p {
     line-height: 1.5;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
 main, footer {
     max-width: calc(910px - 5%);
     margin: 0 auto;
@@ -90,24 +96,6 @@ a {
     color: #e71d36;
     text-decoration: none;
 
-}
-
-
-.nom {
-    color : #2ec4b6;
-    font-size: 3rem;
-
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
-
-a {
-    color: #e71d36;
-    text-decoration: none;
 }
 
 a:hover {
@@ -142,9 +130,7 @@ header .metier {
     font-weight: bold;
 }
 
-
 /* Menu navigation */
-
 header nav {
     text-align: center;
 }

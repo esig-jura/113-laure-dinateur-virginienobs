@@ -41,6 +41,10 @@
     box-sizing: border-box;
 }
 
+.text-center {
+    text-align: center;
+}
+
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 400;
@@ -149,6 +153,7 @@ header nav ul li {
 
 /* Navigation menu */
 header nav ul li a {
+    display: inline-block;
     color: #fdfffc;
     /* Plus gras */
     font-weight: bold;
@@ -159,4 +164,49 @@ header nav ul li a {
 /* Cacher menu accueil -- Sélecteur d'attribut */
 header nav ul li a[href="index.html"] {
     display: none;
+}
+
+/* contenu principal*/
+main {
+    margin: 0 5%;
+}
+
+footer {
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer nav ul {
+    padding: 0; /* supprimer la marge par défaut*/
+    list-style-type: none; /* supprimer liste à puce*/
+}
+
+footer nav ul li {
+    display: inline-block;
+}
+
+footer nav ul img {
+    width: 50px;
+    margin: 0 15px;
+
+    filter: grayscale(100%);
+    transition: filter 500ms;
+}
+
+footer nav ul img:hover {
+    width: 50px;
+    margin: 0 15px;
+    filter: grayscale(0);
+
+}
+
+/* page info*/
+.page-infos img.laure {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.page-infos h1 {
+    text-align: center;
+
 }

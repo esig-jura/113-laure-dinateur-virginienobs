@@ -200,6 +200,39 @@ footer nav ul img:hover {
 
 }
 
+/* Page accueil*/
+.page-accueil ul.realisations {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap : 40px 20px;
+}
+
+.page-accueil ul.realisations li {
+    background-color: #e7e9eb;
+    flex-basis : calc(50% - 20px);
+    flex-grow: 1;
+    transition: transform .2s;
+}
+
+.page-accueil ul.realisations li a {
+    color: #011627;
+}
+
+.page-accueil ul.realisations li:hover {
+    transform: scale(1.1);
+}
+
+/* Supprimer marges autours des images*/
+.page-accueil ul.realisations li figure {
+    margin: 0;
+}
+
+.page-accueil ul.realisations li figcaption {
+    padding: 10px;
+}
+
 /* page info*/
 .page-infos img.laure {
     border-radius: 50%;

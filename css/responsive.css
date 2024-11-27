@@ -1,0 +1,28 @@
+body {
+
+}
+
+main {
+
+}
+
+/* Pour les écrans >= 480 px */
+@media screen and (min-width: 480px) {
+    body {
+
+    }
+}
+
+/* Pour les écrans >= 660 px */
+@media screen and (min-width: 660px) {
+    body {
+
+    }
+}
+
+/* Pour les écrans >= 910 px */
+@media screen and (min-width: 910px) {
+    body {
+
+    }
+}
